@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+<p>Перед скриптом...</p>
+<button type="button" class="btn btn-primary"  OnClick="a();">Primary</button>
+<script >
+    function a(){
+        let script = document.createElement('script');
+        script.src = "basics.js";
+
+        document.head.append(script);
+    }
+</script>
+
+<p>...После скрипта.</p>
+
+</body>
+
+</html>
