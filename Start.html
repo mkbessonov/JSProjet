@@ -2,18 +2,18 @@
 <html>
 
 <body>
-<p>Перед скриптом...</p>
-<button type="button" class="btn btn-primary"  OnClick="a();">Primary</button>
+<!--p>Перед скриптом...</p-->
+<button type="button" class="btn btn-primary"  OnClick="hello();">Hello world!</button>
+<!--script src = hello.js></script-->
 <script >
-    function a(){
+    function hello(){
         let script = document.createElement('script');
-        script.src = "basics.js";
-
+        script.src = "hello.js";
         document.head.append(script);
     }
 </script>
 
-<p>...После скрипта.</p>
+<!--p>...После скрипта.</p-->
 
 </body>
 
