@@ -4,11 +4,17 @@
 <body>
 <!--p>Перед скриптом...</p-->
 <button type="button" class="btn btn-primary"  OnClick="hello();">Hello world!</button>
+<button type = "button" class = "btn btn-primary" OnClick = "variable();">Переменные</button>
 <!--script src = hello.js></script-->
 <script >
     function hello(){
         let script = document.createElement('script');
         script.src = "hello.js";
+        document.head.append(script);
+    }
+    function variable(){
+        let script = document.createElement("script");
+        script.src = "variable.js";
         document.head.append(script);
     }
 </script>
